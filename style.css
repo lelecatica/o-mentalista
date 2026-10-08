@@ -1,0 +1,152 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    background-color: #1e1e24;
+    color: #e0e0e0;
+}
+
+/* Cabeçalho e Menu de Navegação */
+header {
+    background-color: #111115;
+    color: #ffffff;
+    padding: 2rem;
+    text-align: center;
+    border-bottom: 3px solid #991b1b;
+}
+
+header h1 {
+    margin-bottom: 1rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+nav a {
+    color: #b3b3b3;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 5px 10px;
+    transition: color 0.3s ease, border-bottom 0.3s ease;
+}
+
+/* Efeito Hover nos Links do Menu */
+nav a:hover {
+    color: #ef4444;
+    border-bottom: 2px solid #ef4444;
+}
+
+/* Layout Principal usando Flexbox */
+main {
+    max-width: 1100px;
+    margin: 30px auto;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+/* Artigo Principal */
+article {
+    flex: 3;
+}
+
+section {
+    background-color: #2a2a35;
+    padding: 30px;
+    margin-bottom: 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+h2 {
+    color: #ffffff;
+    margin-bottom: 15px;
+    border-left: 4px solid #ef4444;
+    padding-left: 10px;
+}
+
+/* Citações e Elementos de Texto */
+blockquote {
+    background-color: #22222b;
+    border-left: 5px solid #991b1b;
+    margin: 20px 0;
+    padding: 15px;
+    font-style: italic;
+    color: #cccccc;
+}
+
+ul, ol {
+    margin: 15px 0 15px 25px;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+li strong {
+    color: #ef4444;
+}
+
+.img-artigo {
+    width: 100%;
+    max-height: 380px;
+    object-fit: cover;
+    border-radius: 6px;
+    margin-top: 20px;
+    border: 1px solid #444;
+}
+
+/* Barra Lateral (Aside) */
+aside {
+    flex: 1;
+    background-color: #2a2a35;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    height: fit-content;
+    border-top: 4px solid #991b1b;
+}
+
+aside h3 {
+    color: #ffffff;
+    margin-bottom: 12px;
+}
+
+aside em {
+    color: #ef4444;
+}
+
+/* Rodapé */
+footer {
+    background-color: #111115;
+    color: #888888;
+    text-align: center;
+    padding: 25px;
+    margin-top: 50px;
+    font-size: 0.9rem;
+}
+
+/* Layout Responsivo (Dispositivos Móveis) */
+@media (max-width: 768px) {
+    main {
+        flex-direction: column;
+    }
+    
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+    }
+}
